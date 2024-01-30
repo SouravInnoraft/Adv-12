@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
 
 }
 
@@ -137,21 +138,22 @@ a:hover{
 }
 .banner{
     background: linear-gradient(rgba(26, 25, 25, 0.829),rgba(31, 29, 29, 0.269)),url(./Images/banner.jpg) no-repeat center/cover;
-    height: 570px;
+    height: 580px;
     position: relative;
 }
 .banner-container{
     color: white;
-    width:50%;
+    width:600px;
     position: absolute;
     top:18%;
     h1{
         font-size: 50px;
         margin-bottom: 10px;
     }
-    /* p{
-        font-size: 17px;
-    } */
+    p{
+        font-size: 16px;
+        line-height: 2rem;
+    }
 
 }
 .btn-container{
@@ -164,28 +166,25 @@ a:hover{
     color: orangered;
     margin-right: 15px;
 }
-.services:hover,.work:hover{
+.services:hover{
     background-color: aquamarine;
     color: black
 }
-
 .play{
     display: inline-block;
+    vertical-align: middle;
+}
+.play img{
     background-color: rgb(150, 45, 7); 
     border-radius: 50%;
-    padding: 12px;
-   img{
-    width: 20px;
-    height: 20px;
-   }
-    margin-right: 5px;
+    padding: 10px;
 }
-.play:hover{
+.play img:hover{
     background-color: black;
 }
-.work{
+.work:hover{
     display: inline-block;
-    padding: 10px;
+    
 }
 .feature{
     position: absolute;
@@ -201,6 +200,7 @@ a:hover{
     color: white;
     border-right: 1px solid var(--border-color);
     span{
+        margin-left: 10px;
         text-align: start;
     }
 }
